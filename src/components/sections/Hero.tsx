@@ -132,7 +132,7 @@ export default function Hero() {
           animate="show"
           className="font-sans text-slate-300 text-lg md:text-xl max-w-2xl leading-relaxed"
         >
-          I am a Computer Science junior at IIIT Lucknow with experience building AI agents and microservices. I specialize in distributed systems, LLM integrations, and full-stack development.
+          I am a Computer Science junior at IIIT Lucknow with experience in sprinklr 6 months internship and a strong passion for competitive programming. I have solved over 1000 problems on various platforms, honing my problem-solving skills and algorithmic thinking.
         </motion.p>
 
         {/* Dynamic Metric Badges - Marquee */}

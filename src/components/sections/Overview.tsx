@@ -58,7 +58,7 @@ export default function Overview() {
           style={{ padding: '56px 52px' }}
         >
           <p className="font-sans text-base md:text-lg text-slate-200 leading-loose font-medium">
-            I am a Computer Science junior at IIIT Lucknow with experience building AI agents and microservices at Sprinklr. I specialize in distributed systems, LLM integrations, and full-stack development.
+            I am a Computer Science junior at IIIT Lucknow with experience in sprinklr 6 months internship and a strong passion for competitive programming. I have solved over 1000 problems on various platforms, honing my problem-solving skills and algorithmic thinking.
           </p>
 
           <p className="font-sans text-slate-400 text-sm md:text-base leading-loose">

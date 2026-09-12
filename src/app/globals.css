@@ -1,0 +1,532 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════
+   Design system
+   Editorial / technical. Layered neutral surfaces, one accent,
+   hairline borders, restrained motion.
+═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* Surfaces — each step is a distinct elevation, not a shadow */
+  --bg: #08080a;
+  --surface-1: #0d0d10;
+  --surface-2: #121216;
+  --surface-3: #18181d;
+
+  /* Hairlines */
+  --line: rgba(255, 255, 255, 0.07);
+  --line-strong: rgba(255, 255, 255, 0.13);
+
+  /* Text tiers */
+  --text: #ededf0;
+  --text-muted: #9d9da8;
+  --text-faint: #6c6c78;
+
+  /* Accent — used sparingly: marks, links, focus, active state */
+  --accent: #6e6bff;
+  --accent-soft: rgba(110, 107, 255, 0.12);
+  --accent-line: rgba(110, 107, 255, 0.32);
+
+  /* Signal — reserved for "live" indicators only */
+  --signal: #34d399;
+
+  --nav-h: 60px;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-faint: var(--text-faint);
+  --color-accent: var(--accent);
+  --color-signal: var(--signal);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-jetbrains), ui-monospace, "SF Mono", monospace;
+}
+
+/* ── Base ──
+   Everything here lives in @layer base so component utilities below
+   (.btn-primary, .chip, …) win the cascade over element defaults. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* Single ambient layer: a fine grid that fades toward the bottom.
+     Fixed + pointer-events:none so it never affects layout or input. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: radial-gradient(ellipse 100% 60% at 50% 0%, #000 20%, transparent 75%);
+  }
+
+  ::selection {
+    background: var(--accent-soft);
+    color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+    letter-spacing: -0.022em;
+    line-height: 1.12;
+    text-wrap: balance;
+  }
+
+  p {
+    line-height: 1.7;
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a31;
+    border: 3px solid var(--bg);
+    border-radius: 99px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3a44;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Layout primitives
+═══════════════════════════════════════════════════════════ */
+
+@utility shell {
+  width: 100%;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+@media (min-width: 768px) {
+  .shell {
+    padding-inline: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .shell {
+    padding-inline: 56px;
+  }
+}
+
+@utility section {
+  position: relative;
+  z-index: 1;
+  padding-block: 88px;
+  scroll-margin-top: var(--nav-h);
+  border-top: 1px solid var(--line);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-block: 128px;
+  }
+}
+
+/* Section label: 01 / Section name — the editorial index */
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+@utility eyebrow-index {
+  color: var(--accent);
+}
+
+@utility section-title {
+  font-size: clamp(1.9rem, 1.3rem + 2.4vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.06;
+  color: #fff;
+}
+
+@utility section-lede {
+  font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.0625rem);
+  line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 58ch;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Surfaces
+═══════════════════════════════════════════════════════════ */
+
+@utility panel {
+  background: var(--surface-1);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+@utility panel-hover {
+  background: var(--surface-1);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.panel-hover:hover {
+  border-color: var(--line-strong);
+  background: var(--surface-2);
+}
+
+/* Monospace metadata chip */
+@utility chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.02);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  line-height: 1;
+  color: var(--text-muted);
+  transition:
+    border-color 0.18s ease,
+    color 0.18s ease,
+    background-color 0.18s ease;
+}
+
+@utility chip-interactive {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.02);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  line-height: 1;
+  color: var(--text-muted);
+  transition:
+    border-color 0.18s ease,
+    color 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.chip-interactive:hover {
+  border-color: var(--accent-line);
+  color: var(--text);
+  background: var(--accent-soft);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Buttons
+═══════════════════════════════════════════════════════════ */
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  padding-inline: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.006em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    opacity 0.18s ease;
+}
+
+@utility btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  padding-inline: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.006em;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  color: #08080a;
+  border: 1px solid #fff;
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    opacity 0.18s ease;
+}
+
+.btn-primary:hover {
+  background: #d9d9e3;
+  border-color: #d9d9e3;
+}
+
+@utility btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  padding-inline: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.006em;
+  white-space: nowrap;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line-strong);
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--surface-2);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+/* Text link with an underline that draws in on hover */
+@utility link-underline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-muted);
+  transition: color 0.18s ease;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-underline:hover {
+  color: var(--text);
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Motion
+═══════════════════════════════════════════════════════════ */
+
+/* Pointer-following light on cards. Purely decorative, hover-only,
+   and inert on touch devices where there is no pointer to follow. */
+@utility spotlight {
+  position: relative;
+  isolation: isolate;
+}
+
+.spotlight::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: radial-gradient(
+    380px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(110, 107, 255, 0.09),
+    transparent 68%
+  );
+}
+
+@media (hover: hover) {
+  .spotlight:hover::after {
+    opacity: 1;
+  }
+}
+
+/* Slow ambient drift behind the hero. Large, dim, and low-frequency
+   so it reads as depth rather than motion. */
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(-4%, -2%, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(4%, 3%, 0) scale(1.08);
+  }
+}
+
+.hero-glow {
+  animation: drift 22s ease-in-out infinite;
+}
+
+/* Hero entrance. The element's resting state is visible; the animation runs
+   *from* the hidden state with fill-mode backwards, so the hero never depends
+   on JavaScript to be readable. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+@utility rise {
+  animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* Travelling pulse down the hero pipeline connectors */
+@keyframes flow-down {
+  0% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 200%);
+    opacity: 0;
+  }
+}
+
+.live-dot {
+  animation: pulse-dot 2.4s ease-in-out infinite;
+}
+
+/* One global switch for every non-essential animation. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Admin vault (kept from the existing command-center)
+═══════════════════════════════════════════════════════════ */
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #2a2a31;
+  border: none;
+  border-radius: 99px;
+}
+
+@utility glass {
+  background: var(--surface-1);
+  border: 1px solid var(--line);
+}
+
+@utility form-input {
+  width: 100%;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 11px 14px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--text);
+  transition:
+    border-color 0.18s ease,
+    background-color 0.18s ease;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--text-faint);
+}
+
+.form-input:focus {
+  border-color: var(--accent-line);
+  background: var(--surface-3);
+}

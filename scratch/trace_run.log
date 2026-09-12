@@ -1,0 +1,848 @@
+=== START TRACE parent_pid=82354 ===
+[PID:82354] Preload trace initialized
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/bin/next
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/require-hook.js
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: module -> module
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/commander/index.js
+[PID:82354] REQ_PROJECT: node:events -> node:events
+[PID:82354] REQ_PROJECT: node:child_process -> node:child_process
+[PID:82354] REQ_PROJECT: node:path -> node:path
+[PID:82354] REQ_PROJECT: node:fs -> node:fs
+[PID:82354] REQ_PROJECT: node:process -> node:process
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/output/log.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/picocolors.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/lru-cache.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/semver/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/format-cli-help-output.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/constants.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/utils.js
+[PID:82354] REQ_PROJECT: node:util -> node:util
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/cli/next-test.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/get-project-dir.js
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/detect-typo.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/realpath.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/config.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: url -> url
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/find-up/index.js
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/p-limit/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/ci-info.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/ci-info/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/constants.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/@swc/helpers/cjs/_interop_require_default.cjs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/modern-browserslist-target.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/entry-constants.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/config-shared.js
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/image-config.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/size-limit.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/config-utils.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/@next/env/dist/index.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] REQ_PROJECT: crypto -> crypto
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/telemetry/flush-telemetry.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/shared.js
+[PID:82354] REQ_PROJECT: node:crypto -> node:crypto
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/find-root.js
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/setup-http-agent-env.js
+[PID:82354] REQ_PROJECT: http -> http
+[PID:82354] REQ_PROJECT: https -> https
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/parse-path.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/match-remote-pattern.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/picomatch/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/next-config-ts/transpile-config.js
+[PID:82354] REQ_PROJECT: node:path -> node:path
+[PID:82354] REQ_PROJECT: node:fs -> node:fs
+[PID:82354] REQ_PROJECT: node:url -> node:url
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/next-config-ts/require-hook.js
+[PID:82354] REQ_PROJECT: node:module -> node:module
+[PID:82354] REQ_PROJECT: node:fs -> node:fs
+[PID:82354] REQ_PROJECT: node:path -> node:path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/typescript/loadTsConfig.js
+[PID:82354] REQ_PROJECT: node:fs -> node:fs
+[PID:82354] REQ_PROJECT: node:path -> node:path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/comment-json/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/dset.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/zod.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/zod/index.cjs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/zod-validation-error/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/is-bot.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/html-bots.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/find-pages-dir.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/use-cache/cache-life-profile.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/format-dynamic-import-path.js
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: url -> url
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/interop-default.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/hash.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/errors/hard-deprecated-config-error.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/mcp/tools/next-instance-error-state.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/bundler.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/duration-to-string.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/has-necessary-dependencies.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/resolve-from.js
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/is-error.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/is-plain-object.js
+[PID:82354] REQ_PROJECT: module -> module
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/install-dependencies.js
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/helpers/get-pkg-manager.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: child_process -> child_process
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/helpers/install.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/cross-spawn/index.js
+[PID:82354] REQ_PROJECT: child_process -> child_process
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/helpers/get-online.js
+[PID:82354] REQ_PROJECT: child_process -> child_process
+[PID:82354] REQ_PROJECT: dns/promises -> dns/promises
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/verify-typescript-setup.js
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/compile-error.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/typescript/getTypeScriptIntent.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/recursive-readdir.js
+[PID:82354] REQ_PROJECT: fs/promises -> fs/promises
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/typescript/writeAppTypeDeclarations.js
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/typescript/writeConfigurationDefaults.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/typescript/type-paths.js
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/typescript/missingDependencyError.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/oxford-comma-list.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/typescript/runTypeScriptCli.js
+[PID:82354] REQ_PROJECT: node:fs -> node:fs
+[PID:82354] REQ_PROJECT: node:path -> node:path
+[PID:82354] REQ_PROJECT: node:child_process -> node:child_process
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/profiles-dir.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: file:///Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/cli/next-dev.js
+[PID:82354] READ_FILE: file:///Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/cli/next-dev.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/cpu-profile.js
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/telemetry/storage.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/conf/index.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: crypto -> crypto
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: events -> events
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/write-file-atomic/index.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: node:crypto -> node:crypto
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: worker_threads -> worker_threads
+[PID:82354] REQ_PROJECT: crypto -> crypto
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/is-docker/index.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/telemetry/anonymous-meta.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/is-wsl/index.js
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/telemetry/agent-name.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@vercel/detect-agent/index.js
+[PID:82354] REQ_PROJECT: node:fs/promises -> node:fs/promises
+[PID:82354] REQ_PROJECT: node:fs -> node:fs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/telemetry/post-telemetry-payload.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/async-retry/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/telemetry/project-id.js
+[PID:82354] REQ_PROJECT: child_process -> child_process
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@edge-runtime/ponyfill/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@edge-runtime/primitives/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@edge-runtime/primitives/load.js
+[PID:82354] REQ_PROJECT: module -> module
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@edge-runtime/primitives/console.js.text.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@edge-runtime/primitives/timers.js.text.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@edge-runtime/primitives/events.js.text.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@edge-runtime/primitives/stream.js
+[PID:82354] REQ_PROJECT: stream/web -> stream/web
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@edge-runtime/primitives/abort-controller.js.text.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@edge-runtime/primitives/url.js.text.js
+[PID:82354] REQ_PROJECT: buffer -> buffer
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: net -> net
+[PID:82354] REQ_PROJECT: http -> http
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: http -> http
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: net -> net
+[PID:82354] REQ_PROJECT: buffer -> buffer
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: querystring -> querystring
+[PID:82354] REQ_PROJECT: events -> events
+[PID:82354] REQ_PROJECT: diagnostics_channel -> diagnostics_channel
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: events -> events
+[PID:82354] REQ_PROJECT: net -> net
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: buffer -> buffer
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: http2 -> http2
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: events -> events
+[PID:82354] REQ_PROJECT: url -> url
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: async_hooks -> async_hooks
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: async_hooks -> async_hooks
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: async_hooks -> async_hooks
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: async_hooks -> async_hooks
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: async_hooks -> async_hooks
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: http -> http
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: console -> console
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: zlib -> zlib
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: perf_hooks -> perf_hooks
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: util/types -> util/types
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: worker_threads -> worker_threads
+[PID:82354] REQ_PROJECT: crypto -> crypto
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: buffer -> buffer
+[PID:82354] REQ_PROJECT: buffer -> buffer
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: buffer -> buffer
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: util/types -> util/types
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: buffer -> buffer
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: events -> events
+[PID:82354] REQ_PROJECT: zlib -> zlib
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: events -> events
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: http -> http
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: string_decoder -> string_decoder
+[PID:82354] REQ_PROJECT: buffer -> buffer
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: worker_threads -> worker_threads
+[PID:82354] REQ_PROJECT: buffer -> buffer
+[PID:82354] REQ_PROJECT: crypto -> crypto
+[PID:82354] REQ_PROJECT: crypto -> crypto
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: assert -> assert
+[PID:82354] REQ_PROJECT: zlib -> zlib
+[PID:82354] REQ_PROJECT: util -> util
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: stream -> stream
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/file-exists.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/helpers/get-npx-command.js
+[PID:82354] REQ_PROJECT: child_process -> child_process
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/mkcert.js
+[PID:82354] REQ_PROJECT: node:fs -> node:fs
+[PID:82354] REQ_PROJECT: node:path -> node:path
+[PID:82354] REQ_PROJECT: node:crypto -> node:crypto
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/helpers/get-cache-directory.js
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: node:child_process -> node:child_process
+[PID:82354] REQ_PROJECT: node:stream/web -> node:stream/web
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/upload-trace.js
+[PID:82354] REQ_PROJECT: child_process -> child_process
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/helpers/get-reserved-port.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/helpers/git.js
+[PID:82354] REQ_PROJECT: child_process -> child_process
+[PID:82354] REQ_PROJECT: os -> os
+[PID:82354] REQ_PROJECT: node:fs -> node:fs
+[PID:82354] REQ_PROJECT: node:events -> node:events
+[PID:82354] REQ_PROJECT: timers -> timers
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/trace.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/index.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/to-telemetry.js
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/to-json.js
+[PID:82354] REQ_PROJECT: fs -> fs
+[PID:82354] REQ_PROJECT: path -> path
+[PID:82354] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/to-json-build.js
+[PID:82355] Preload trace initialized
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/start-server.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/start-server.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/cpu-profile.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/cpu-profile.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/get-network-host.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/get-network-host.js.map
+[PID:82355] REQ_PROJECT: os -> os
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/next.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/next.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/require-hook.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/require-hook.js.map
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: module -> module
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-polyfill-crypto.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-polyfill-crypto.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/output/log.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/output/log.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/picocolors.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/picocolors.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/lru-cache.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/lru-cache.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/config.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/config.js.map
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: url -> url
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/find-up/index.js
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] REQ_PROJECT: util -> util
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/p-limit/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/ci-info.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/ci-info.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/ci-info/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/constants.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/constants.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/@swc/helpers/cjs/_interop_require_default.cjs
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/modern-browserslist-target.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/modern-browserslist-target.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/entry-constants.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/entry-constants.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/config-shared.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/config-shared.js.map
+[PID:82355] REQ_PROJECT: os -> os
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/image-config.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/image-config.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/constants.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/constants.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/size-limit.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/size-limit.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/config-utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/config-utils.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/@next/env/dist/index.js
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: os -> os
+[PID:82355] REQ_PROJECT: crypto -> crypto
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/telemetry/flush-telemetry.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/telemetry/flush-telemetry.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/shared.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/shared.js.map
+[PID:82355] REQ_PROJECT: node:crypto -> node:crypto
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/find-root.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/find-root.js.map
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] REQ_PROJECT: os -> os
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/setup-http-agent-env.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/setup-http-agent-env.js.map
+[PID:82355] REQ_PROJECT: http -> http
+[PID:82355] REQ_PROJECT: https -> https
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/path-has-prefix.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/parse-path.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/parse-path.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/match-remote-pattern.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/match-remote-pattern.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/picomatch/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/next-config-ts/transpile-config.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/next-config-ts/transpile-config.js.map
+[PID:82355] REQ_PROJECT: node:path -> node:path
+[PID:82355] REQ_PROJECT: node:fs -> node:fs
+[PID:82355] REQ_PROJECT: node:url -> node:url
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/next-config-ts/require-hook.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/next-config-ts/require-hook.js.map
+[PID:82355] REQ_PROJECT: node:module -> node:module
+[PID:82355] REQ_PROJECT: node:fs -> node:fs
+[PID:82355] REQ_PROJECT: node:path -> node:path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/utils.js.map
+[PID:82355] REQ_PROJECT: node:util -> node:util
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/commander/index.js
+[PID:82355] REQ_PROJECT: node:events -> node:events
+[PID:82355] REQ_PROJECT: node:child_process -> node:child_process
+[PID:82355] REQ_PROJECT: node:path -> node:path
+[PID:82355] REQ_PROJECT: node:fs -> node:fs
+[PID:82355] REQ_PROJECT: node:process -> node:process
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/typescript/loadTsConfig.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/typescript/loadTsConfig.js.map
+[PID:82355] REQ_PROJECT: node:fs -> node:fs
+[PID:82355] REQ_PROJECT: node:path -> node:path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/comment-json/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/dset.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/dset.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/zod.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/zod.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/zod/index.cjs
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/zod-validation-error/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/is-bot.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/is-bot.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/html-bots.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/html-bots.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/find-pages-dir.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/find-pages-dir.js.map
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/use-cache/cache-life-profile.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/use-cache/cache-life-profile.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/format-dynamic-import-path.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/format-dynamic-import-path.js.map
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: url -> url
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/interop-default.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/interop-default.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/hash.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/hash.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/errors/hard-deprecated-config-error.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/errors/hard-deprecated-config-error.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/mcp/tools/next-instance-error-state.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/mcp/tools/next-instance-error-state.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/bundler.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/bundler.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/duration-to-string.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/build/duration-to-string.js.map
+[PID:82355] REQ_PROJECT: node:path -> node:path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/trace/tracer.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/trace/tracer.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/trace/constants.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/trace/constants.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/is-thenable.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/is-thenable.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@opentelemetry/api/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/format-url.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/format-url.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/querystring.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/querystring.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/async-callback-set.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/async-callback-set.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/router-server-context.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/router-server-context.js.map
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] REQ_PROJECT: v8 -> v8
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: http -> http
+[PID:82355] REQ_PROJECT: https -> https
+[PID:82355] REQ_PROJECT: os -> os
+[PID:82355] REQ_PROJECT: child_process -> child_process
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/debug/index.js
+[PID:82355] REQ_PROJECT: tty -> tty
+[PID:82355] REQ_PROJECT: util -> util
+[PID:82355] REQ_PROJECT: os -> os
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/format-hostname.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/format-hostname.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/is-ipv6.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/is-ipv6.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-server.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-server.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-baseline.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-baseline.js.map
+[PID:82355] REQ_PROJECT: async_hooks -> async_hooks
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/error-inspect.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/error-inspect.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/patch-error-inspect.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/patch-error-inspect.js.map
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: url -> url
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/source-map/source-map.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/source-maps.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/source-maps.js.map
+[PID:82355] REQ_PROJECT: module -> module
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/parse-stack.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/parse-stack.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/stacktrace-parser/stack-trace-parser.cjs.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/work-unit-async-storage.external.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/work-unit-async-storage.external.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/work-unit-async-storage-instance.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/work-unit-async-storage-instance.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/async-local-storage.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/async-local-storage.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/invariant-error.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/invariant-error.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/console-file.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/console-file.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/console-async-storage.external.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/console-async-storage.external.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/console-async-storage-instance.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/console-async-storage-instance.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/dev/browser-logs/file-logger.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/dev/browser-logs/file-logger.js.map
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/client/lib/console.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/client/lib/console.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/is-error.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/is-error.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/is-plain-object.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/is-plain-object.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/console-exit.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/console-exit.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/console-dim.external.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/console-dim.external.js.map
+[PID:82355] REQ_PROJECT: node:inspector -> node:inspector
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/runtime-reacts.external.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/runtime-reacts.external.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/unhandled-rejection.external.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/unhandled-rejection.external.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/random.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/random.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/io-utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/io-utils.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/work-async-storage.external.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/work-async-storage.external.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/work-async-storage-instance.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/work-async-storage-instance.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/dynamic-rendering.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/dynamic-rendering.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/react/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/react/cjs/react.development.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/client/components/hooks-server-context.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/client/components/hooks-server-context.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/client/components/static-generation-bailout.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/client/components/static-generation-bailout.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/dynamic-rendering-utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/dynamic-rendering-utils.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/staged-rendering.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/staged-rendering.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/promise-with-resolvers.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/promise-with-resolvers.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/framework/boundary-constants.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/framework/boundary-constants.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/scheduler.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/scheduler.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/lazy-dynamic/bailout-to-csr.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/lazy-dynamic/bailout-to-csr.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/blocking-route-messages.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/blocking-route-messages.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/instant-validation/boundary-constants.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/instant-validation/boundary-constants.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/instant-validation/boundary-tracking.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/instant-validation/boundary-tracking.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/instant-messages.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/instant-messages.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/sync-io-messages.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/sync-io-messages.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/date.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/date.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/web-crypto.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/web-crypto.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/node-crypto.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/node-crypto.js.map
+[PID:82355] REQ_PROJECT: node:crypto -> node:crypto
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/fast-set-immediate.external.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/fast-set-immediate.external.js.map
+[PID:82355] REQ_PROJECT: node:util -> node:util
+[PID:82355] REQ_PROJECT: node:timers -> node:timers
+[PID:82355] REQ_PROJECT: node:timers/promises -> node:timers/promises
+[PID:82355] REQ_PROJECT: url -> url
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/serve-static.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/serve-static.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/send/index.js
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: util -> util
+[PID:82355] REQ_PROJECT: events -> events
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] REQ_PROJECT: stream -> stream
+[PID:82355] REQ_PROJECT: zlib -> zlib
+[PID:82355] REQ_PROJECT: crypto -> crypto
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/fresh/index.js
+[PID:82355] REQ_PROJECT: async_hooks -> async_hooks
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/process-error-handlers.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/node-environment-extensions/process-error-handlers.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/is-postpone.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/is-postpone.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/utils.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/filesystem.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/filesystem.js.map
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: fs/promises -> fs/promises
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/load-custom-routes.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/load-custom-routes.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/escape-regexp.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/escape-regexp.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/try-to-parse-path.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/try-to-parse-path.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/path-to-regexp/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/route-pattern-normalizer.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/route-pattern-normalizer.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/redirect-status.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/redirect-status.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/client/components/redirect-status-code.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/client/components/redirect-status-code.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/url.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/url.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/client/components/app-router-headers.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/client/components/app-router-headers.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/file-exists.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/file-exists.js.map
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/recursive-readdir.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/recursive-readdir.js.map
+[PID:82355] REQ_PROJECT: fs/promises -> fs/promises
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/index.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/sorted-routes.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/sorted-routes.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/is-dynamic.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/is-dynamic.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/interception-routes.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/interception-routes.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/app-paths.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/app-paths.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/page-path/ensure-leading-slash.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/page-path/ensure-leading-slash.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/segment.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/segment.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/path-match.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/path-match.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/route-regex.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/route-regex.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/remove-trailing-slash.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/get-dynamic-param.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/get-dynamic-param.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/parse-loader-tree.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/parse-loader-tree.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/routes/app.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/routes/app.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/get-segment-param.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/get-segment-param.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/resolve-param-value.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/resolve-param-value.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/interception-prefix-from-param-type.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/interception-prefix-from-param-type.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/route-matcher.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/route-matcher.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/route-match-utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/route-match-utils.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/remove-path-prefix.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/remove-path-prefix.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/middleware-route-matcher.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/middleware-route-matcher.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/prepare-destination.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/prepare-destination.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/parse-url.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/parse-url.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/parse-relative-url.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/parse-relative-url.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/api-utils/get-cookie-parser.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/api-utils/get-cookie-parser.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/page-path/normalize-path-sep.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/page-path/normalize-path-sep.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/metadata/get-metadata-route.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/metadata/get-metadata-route.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/metadata/is-metadata-route.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/metadata/is-metadata-route.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/is-app-route-route.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/is-app-route-route.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/isomorphic/path.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/isomorphic/path.js.map
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/server-utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/server-utils.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/utils.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/decode-query-path-parameter.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/decode-query-path-parameter.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/normalizers/request/rsc.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/normalizers/request/rsc.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/normalizers/request/suffix.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/normalizers/request/suffix.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/encode-uri-path.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/encode-uri-path.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/proxy-request.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/proxy-request.js.map
+[PID:82355] REQ_PROJECT: url -> url
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/server-route-utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/server-route-utils.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/request-meta.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/request-meta.js.map
+[PID:82355] REQ_PROJECT: querystring -> querystring
+[PID:82355] REQ_PROJECT: stream -> stream
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/detached-promise.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/detached-promise.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/pipe-readable.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/pipe-readable.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/spec-extension/adapters/next-request.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/spec-extension/request.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/spec-extension/request.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/next-url.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/next-url.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/i18n/detect-domain-locale.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/i18n/detect-domain-locale.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/format-next-pathname-info.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/format-next-pathname-info.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/add-path-prefix.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/add-path-prefix.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/add-path-suffix.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/add-path-suffix.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/add-locale.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/add-locale.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/get-hostname.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/get-hostname.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/get-next-pathname-info.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/get-next-pathname-info.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/error.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/error.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/spec-extension/cookies.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/web/spec-extension/cookies.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/@edge-runtime/cookies/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/base-http/helpers.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/base-http/helpers.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/client-component-renderer-logger.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/client-component-renderer-logger.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/resolve-routes.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/resolve-routes.js.map
+[PID:82355] REQ_PROJECT: node:path -> node:path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/body-streams.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/body-streams.js.map
+[PID:82355] REQ_PROJECT: stream -> stream
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/bytes/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/server-ipc/utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/server-ipc/utils.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/relativize-url.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/router/utils/relativize-url.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/normalizers/request/next-data.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/normalizers/request/next-data.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/page-path/denormalize-page-path.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/page-path/denormalize-page-path.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/normalizers/request/prefix.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/normalizers/request/prefix.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/normalizers/request/base-path.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/normalizers/request/base-path.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/is-rsc-request.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/is-rsc-request.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/compiled/compression/index.js
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] REQ_PROJECT: buffer -> buffer
+[PID:82355] REQ_PROJECT: zlib -> zlib
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/release-compression-stream.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/release-compression-stream.js.map
+[PID:82355] REQ_PROJECT: node:stream -> node:stream
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/is-non-html-sec-fetch-dest.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/is-non-html-sec-fetch-dest.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/dev-bundler-service.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/dev-bundler-service.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/mock-request.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/mock-request.js.map
+[PID:82355] REQ_PROJECT: stream -> stream
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/dev/hot-reloader-types.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/dev/hot-reloader-types.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/trace/request-insights.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/trace/request-insights.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/request-insights.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/request-insights.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/trace/span-store.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/trace/span-store.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/index.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/trace.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/trace.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/index.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/to-telemetry.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/to-telemetry.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/to-json.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/to-json.js.map
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/to-json-build.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/trace/report/to-json-build.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/normalized-asset-prefix.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/normalized-asset-prefix.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/patch-fetch.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/patch-fetch.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/trace/request-insights-identity.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/trace/request-insights-identity.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/dedupe-fetch.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/dedupe-fetch.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/clone-response.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/clone-response.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/response-cache/index.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/response-cache/index.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/batcher.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/lib/batcher.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/response-cache/utils.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/response-cache/utils.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/response-cache/types.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/response-cache/types.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/render-result.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/route-kind.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/route-kind.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/encode-cache-tag.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/encode-cache-tag.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/block-cross-site-dev.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/router-utils/block-cross-site-dev.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/csrf-protection.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/app-render/csrf-protection.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/no-fallback-error.external.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/shared/lib/no-fallback-error.external.js.map
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/chrome-devtools-workspace.js
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/lib/chrome-devtools-workspace.js.map
+[PID:82355] REQ_PROJECT: crypto -> crypto
+[PID:82355] REQ_PROJECT: fs -> fs
+[PID:82355] REQ_PROJECT: path -> path
+[PID:82355] READ_FILE: /Users/purna/Desktop/newPro_portfolio/node_modules/next/dist/server/cache-dir.js

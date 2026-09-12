@@ -43,8 +43,7 @@ export default function AdminModal() {
       } else {
         setError("Invalid Master Password");
       }
-    } catch { // eslint-disable-next-line
-
+    } catch {
       setError("An error occurred");
     } finally {
       setLoading(false);

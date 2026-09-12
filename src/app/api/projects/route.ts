@@ -7,8 +7,10 @@ export async function GET() {
     await dbConnect();
     const projects = await Project.find({}).sort({ createdAt: -1 });
     return NextResponse.json(projects, { status: 200 });
-  } catch { // eslint-disable-next-line
-
-    return NextResponse.json({ error: "Failed to fetch projects" }, { status: 500 });
+  } catch (error) {
+    // The portfolio renders its core projects statically, so an unreachable
+    // database degrades to "no extra projects" rather than a client-side error.
+    console.error("Failed to fetch projects:", error);
+    return NextResponse.json([], { status: 200 });
   }
 }

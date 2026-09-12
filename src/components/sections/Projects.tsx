@@ -1,153 +1,163 @@
-"use client";
+import { ArrowUpRight, Trophy } from "lucide-react";
+import SectionHeader from "@/components/ui/SectionHeader";
+import Reveal from "@/components/ui/Reveal";
+import { GitHubIcon } from "@/components/ui/Icons";
+import { projects, type Project } from "@/lib/content";
+import ExtraProjects from "@/components/ExtraProjects";
+import SpotlightCard from "@/components/ui/SpotlightCard";
 
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { textVariant, fadeIn, staggerContainer } from "@/lib/motion";
-import { ExternalLink, Folder, Plus } from "lucide-react";
-
-interface Project {
-  _id?: string;
-  title: string;
-  description: string;
-  tech?: string[];
-  techStack?: string[];
-  github?: string;
-  githubLink?: string;
-  demo?: string;
-  liveDemoLink?: string;
-}
-
-const defaultProjects: Project[] = [
-  {
-    title: "CrowdInfra",
-    description: "Geospatial crowdsourced infrastructure demand-mapping platform with interactive location pinning and automated Google Gemini AI insights. Hack-O-Fiesta Runner-up.",
-    tech: ["Next.js", "Node.js", "MongoDB", "Gemini API", "Maps API"],
-    github: "https://github.com/kalyanchilamkuri",
-  },
-  {
-    title: "TravelPedia",
-    description: "Secure full-stack travel planning application supporting concurrent sessions, RBAC, and real-time data aggregation via 15+ REST endpoints.",
-    tech: ["React.js", "Spring Boot", "MySQL", "JWT", "REST API"],
-    github: "https://github.com/kalyanchilamkuri",
-  },
-  {
-    title: "AI On-Call Agent (Sprinklr)",
-    description: "Designed and deployed an AI agent integrating PagerDuty, Grafana, and Kibana to automate RCA workflows and reduce triage time by 40%.",
-    tech: ["Python", "MCP", "LLMs", "Grafana", "Kibana"],
-  },
-];
-
-export default function Projects() {
-  const [projects, setProjects] = useState<Project[]>(defaultProjects);
-  const [isAdmin, setIsAdmin] = useState(false);
-
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setIsAdmin(document.cookie.includes("is_admin=true"));
-    fetch("/api/projects")
-      .then((r) => r.json())
-      .then((data) => {
-        if (data?.length) setProjects([...defaultProjects, ...data]);
-      })
-      .catch(() => {});
-  }, []);
-
+function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
-    <motion.section
-      id="projects"
-      variants={staggerContainer(0.1, 0.1)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.1 }}
-      className="section-container border-t border-white/5"
-    >
-      <div className="section-inner">
-        {/* Title + Admin Button */}
-        <div className="section-title-wrapper">
-          <motion.p variants={textVariant(0)} className="section-sub-label">My Works</motion.p>
-          <motion.h2 variants={textVariant(0.05)} className="section-head">Projects.</motion.h2>
-          {isAdmin && (
-            <motion.button
-              variants={fadeIn("up", "spring", 0.1, 0.5)}
-              className="btn-secondary py-2 px-5 text-xs font-semibold flex items-center gap-1.5 mt-2"
+    <SpotlightCard as="article" className="panel-hover group overflow-hidden">
+      {/* Header */}
+      <header className="flex flex-wrap items-start justify-between gap-4 border-b border-line px-6 py-5 md:px-8 md:py-6">
+        <div className="flex items-baseline gap-4">
+          <span
+            aria-hidden="true"
+            className="font-mono text-[11px] text-text-faint"
+          >
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <div>
+            <h3 className="text-[22px] font-medium tracking-tight text-white md:text-[26px]">
+              {project.name}
+            </h3>
+            <p className="mt-1 text-[14px] text-text-muted">{project.tagline}</p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2">
+          {project.repo && (
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="chip-interactive"
+              aria-label={`${project.name} source code on GitHub`}
             >
-              <Plus size={13} /> Add Project
-            </motion.button>
+              <GitHubIcon size={13} />
+              Code
+            </a>
+          )}
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="chip-interactive"
+              aria-label={`${project.name} live demo`}
+            >
+              Live
+              <ArrowUpRight size={12} aria-hidden="true" />
+            </a>
           )}
         </div>
+      </header>
 
-        {/* Project Cards Grid */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((p, i) => {
-            const techList = p.tech || p.techStack || [];
-            const gitUrl = p.github || p.githubLink;
-            const demoUrl = p.demo || p.liveDemoLink;
+      <div className="grid gap-8 px-6 py-7 md:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] md:gap-12 md:px-8 md:py-8">
+        {/* Narrative */}
+        <div className="flex flex-col gap-6">
+          <div>
+            <h4 className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-text-faint">
+              Problem
+            </h4>
+            <p className="mt-2 text-[14.5px] leading-[1.7] text-text-muted">
+              {project.problem}
+            </p>
+          </div>
 
-            return (
-              <motion.div
-                key={i}
-                variants={fadeIn("up", "spring", i * 0.1, 0.75)}
-                className="glass rounded-2xl border border-white/5 hover:border-teal-500/25 transition-all duration-300 flex flex-col h-full group"
-                style={{ padding: '36px' }}
-                whileHover={{ y: -6, scale: 1.01 }}
-              >
-                {/* Top: icon + links */}
-                <div className="flex items-start justify-between mb-7">
-                  <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-[#14b8a6]">
-                    <Folder size={18} />
-                  </div>
-                  <div className="flex gap-2">
-                    {gitUrl && (
-                      <a
-                        href={gitUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 rounded-lg bg-white/4 border border-white/6 text-slate-400 hover:text-white hover:border-indigo-500/25 transition-all"
-                        aria-label="GitHub Repository"
-                      >
-                        <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" strokeWidth="2.2" fill="none">
-                          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                        </svg>
-                      </a>
-                    )}
-                    {demoUrl && (
-                      <a
-                        href={demoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 rounded-lg bg-white/4 border border-white/6 text-slate-400 hover:text-white hover:border-indigo-500/25 transition-all"
-                        aria-label="Live Demo"
-                      >
-                        <ExternalLink size={15} />
-                      </a>
-                    )}
-                  </div>
-                </div>
+          <div>
+            <h4 className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-text-faint">
+              What I built
+            </h4>
+            <p className="mt-2 text-[14.5px] leading-[1.7] text-text">
+              {project.build}
+            </p>
+          </div>
 
-                {/* Content */}
-                <div className="flex-1 flex flex-col gap-4">
-                  <h3 className="font-heading text-xl font-bold text-white group-hover:text-[#14b8a6] transition-colors leading-snug">
-                    {p.title}
-                  </h3>
-                  <p className="font-sans text-slate-400 text-sm md:text-base leading-loose flex-grow">
-                    {p.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-2 border-t border-white/5">
-                    {techList.map((t, j) => (
-                      <span
-                        key={j}
-                        className="font-mono text-[10px] uppercase tracking-wider px-3 py-1.5 rounded-lg border border-white/8 bg-white/4 text-slate-400 hover:text-teal-400 hover:border-teal-500/25 transition-all"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            );
-          })}
+          <div>
+            <h4 className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-text-faint">
+              Engineering
+            </h4>
+            <ul className="mt-2 flex flex-col gap-2.5">
+              {project.engineering.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span
+                    aria-hidden="true"
+                    className="mt-[9px] size-1 shrink-0 rounded-full bg-text-faint"
+                  />
+                  <span className="text-[14.5px] leading-[1.7] text-text-muted">
+                    {item}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+
+        {/* Spec panel */}
+        <aside className="flex flex-col gap-5 rounded-xl border border-line bg-surface-2 p-5">
+          <div>
+            <h4 className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-text-faint">
+              Year
+            </h4>
+            <p className="mt-1.5 font-mono text-[14px] text-text">{project.year}</p>
+          </div>
+
+          <div className="h-px bg-line" />
+
+          <div>
+            <h4 className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-text-faint">
+              Stack
+            </h4>
+            <ul className="mt-2.5 flex flex-wrap gap-1.5">
+              {project.stack.map((tech) => (
+                <li
+                  key={tech}
+                  className="rounded-md border border-line bg-surface-3 px-2 py-1 font-mono text-[11px] text-text-muted"
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {project.note && (
+            <>
+              <div className="h-px bg-line" />
+              <p className="flex items-center gap-2 text-[12.5px] text-text">
+                <Trophy size={13} className="shrink-0 text-accent" aria-hidden="true" />
+                {project.note}
+              </p>
+            </>
+          )}
+        </aside>
       </div>
-    </motion.section>
+    </SpotlightCard>
+  );
+}
+
+export default function Projects() {
+  return (
+    <section id="projects" className="section">
+      <div className="shell">
+        <SectionHeader
+          index="03"
+          eyebrow="Projects"
+          title="Things I've built."
+          lede="Two products taken from problem statement to working software — one under a 24-hour deadline, one built for concurrency and access control."
+        />
+
+        <div className="flex flex-col gap-6">
+          {projects.map((project, i) => (
+            <Reveal key={project.name} delay={i * 0.08}>
+              <ProjectCard project={project} index={i} />
+            </Reveal>
+          ))}
+        </div>
+
+        <ExtraProjects />
+      </div>
+    </section>
   );
 }

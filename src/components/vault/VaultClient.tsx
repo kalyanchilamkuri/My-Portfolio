@@ -1,7 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { fadeIn } from "@/lib/motion";
+import Reveal from "@/components/ui/Reveal";
 import TaskManager from "@/components/vault/TaskManager";
 import DocumentHub from "@/components/vault/DocumentHub";
 import Link from "next/link";
@@ -24,15 +23,9 @@ function MovingGridBg() {
 
 function Panel({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   return (
-    <motion.div
-      variants={fadeIn("up", "spring", delay, 0.7)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.15 }}
-      className={className}
-    >
+    <Reveal delay={delay} className={className}>
       {children}
-    </motion.div>
+    </Reveal>
   );
 }
 

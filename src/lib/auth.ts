@@ -13,8 +13,7 @@ export async function verifyAdmin() {
     
     const decoded = jwt.verify(token, jwtSecret) as { role?: string };
     return decoded.role === "admin";
-  } catch { // eslint-disable-next-line
-
+  } catch {
     return false;
   }
 }

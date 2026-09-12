@@ -1,90 +1,87 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { textVariant, fadeIn, staggerContainer } from "@/lib/motion";
-import { Code2, Layout, Database, Wrench } from "lucide-react";
-
-const SKILLS = [
-  {
-    category: "Languages",
-    icon: Code2,
-    items: ["C++", "Python", "JavaScript", "Java", "C", "SQL", "HTML/CSS"],
-  },
-  {
-    category: "AI & Gen Systems",
-    icon: Wrench,
-    items: ["LLM Tool Orchestration", "MCP", "RAG", "Prompt Engineering"],
-  },
-  {
-    category: "Backend & Databases",
-    icon: Database,
-    items: ["Node.js", "Express.js", "Spring Boot", "MongoDB", "MySQL", "PostgreSQL", "REST APIs", "Microservices"],
-  },
-  {
-    category: "Frontend",
-    icon: Layout,
-    items: ["React.js", "Next.js", "Tailwind CSS"],
-  },
-  {
-    category: "DevOps & Tools",
-    icon: Wrench,
-    items: ["Git", "GitHub", "Docker", "CI/CD"],
-  },
-];
+import { ArrowUpRight } from "lucide-react";
+import SectionHeader from "@/components/ui/SectionHeader";
+import Reveal from "@/components/ui/Reveal";
+import { skillGroups, cpProfiles, problemsSolved } from "@/lib/content";
 
 export default function Skills() {
   return (
-    <motion.section
-      id="skills"
-      variants={staggerContainer(0.1, 0.1)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.15 }}
-      className="section-container border-t border-white/5"
-    >
-      <div className="section-inner">
-        {/* Title */}
-        <div className="section-title-wrapper">
-          <motion.p variants={textVariant(0)} className="section-sub-label">My Stack</motion.p>
-          <motion.h2 variants={textVariant(0.05)} className="section-head">Skills & Competencies.</motion.h2>
-        </div>
+    <section id="skills" className="section">
+      <div className="shell">
+        <SectionHeader
+          index="04"
+          eyebrow="Skills"
+          title="The toolkit."
+          lede="Technologies I've used to ship production or near-production work — grouped by where they sit in the stack."
+        />
 
-        {/* Skill Category Cards */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
-          {SKILLS.map((cat, idx) => {
-            const Icon = cat.icon;
-            return (
-              <motion.div
-                key={cat.category}
-                variants={fadeIn("up", "spring", idx * 0.1, 0.75)}
-                className="glass rounded-2xl border border-white/5 hover:border-indigo-500/20 transition-all duration-300"
-                style={{ padding: '36px 36px' }}
-                whileHover={{ y: -4 }}
-              >
-                {/* Card Header */}
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 flex-shrink-0">
-                    <Icon size={18} />
-                  </div>
-                  <h3 className="font-heading font-semibold text-lg text-white">{cat.category}</h3>
+        <div className="grid gap-14 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:gap-20">
+          {/* Grouped stack */}
+          <dl className="flex flex-col">
+            {skillGroups.map((group, i) => (
+              <Reveal key={group.group} delay={i * 0.05}>
+                <div className="grid gap-3 border-b border-line py-6 first:pt-0 sm:grid-cols-[150px_minmax(0,1fr)] sm:gap-6">
+                  <dt className="font-mono text-[11px] uppercase tracking-[0.14em] text-text-faint sm:pt-1.5">
+                    {group.group}
+                  </dt>
+                  <dd>
+                    <ul className="flex flex-wrap gap-2">
+                      {group.items.map((item) => (
+                        <li key={item} className="chip">
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </dd>
                 </div>
+              </Reveal>
+            ))}
+          </dl>
 
-                {/* Skill Pills */}
-                <div className="flex flex-wrap gap-2.5">
-                  {cat.items.map((skill) => (
-                    <span
-                      key={skill}
-                      className="px-3.5 py-1.5 rounded-lg border border-white/6 bg-white/4 font-mono text-xs text-slate-300 hover:text-white hover:border-teal-500/40 hover:bg-teal-500/5 transition-all duration-200 cursor-default"
+          {/* Competitive programming */}
+          <Reveal delay={0.1}>
+            <div className="panel p-6 md:p-7">
+              <h3 className="font-mono text-[11px] uppercase tracking-[0.16em] text-text-faint">
+                Competitive programming
+              </h3>
+              <p className="mt-3 text-[14.5px] leading-[1.7] text-text-muted">
+                <span className="text-text">{problemsSolved} problems</span> solved
+                across three platforms — the habit behind tighter complexity bounds
+                in everything above.
+              </p>
+
+              <ul className="mt-6 flex flex-col">
+                {cpProfiles.map((cp) => (
+                  <li key={cp.platform}>
+                    <a
+                      href={cp.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center justify-between gap-4 border-t border-line py-4 transition-colors hover:bg-surface-2"
                     >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            );
-          })}
+                      <div>
+                        <div className="flex items-center gap-1.5 text-[14.5px] text-text">
+                          {cp.platform}
+                          <ArrowUpRight
+                            size={13}
+                            aria-hidden="true"
+                            className="text-text-faint transition-colors group-hover:text-accent"
+                          />
+                        </div>
+                        <div className="mt-0.5 text-[12px] text-text-faint">
+                          {cp.ratingLabel} {cp.rating}
+                        </div>
+                      </div>
+                      <span className="font-mono text-[13px] text-accent">
+                        {cp.title}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

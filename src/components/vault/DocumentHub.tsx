@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Trash2, FileText, Folder, HardDrive, AlertCircle } from "lucide-react";
+import { Plus, Trash2, HardDrive } from "lucide-react";
 
 interface Doc {
   id: string;

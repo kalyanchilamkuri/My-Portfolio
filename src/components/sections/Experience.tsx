@@ -3,6 +3,7 @@ import SectionHeader from "@/components/ui/SectionHeader";
 import Reveal from "@/components/ui/Reveal";
 import CountUp from "@/components/ui/CountUp";
 import SpotlightCard from "@/components/ui/SpotlightCard";
+import AgentPipeline from "@/components/AgentPipeline";
 import { experience } from "@/lib/content";
 
 export default function Experience() {
@@ -19,14 +20,14 @@ export default function Experience() {
         <ol className="flex flex-col">
           {experience.map((job, i) => (
             <Reveal as="li" key={job.company} delay={i * 0.08}>
-              <article className="grid gap-8 border-t border-line pt-10 md:grid-cols-[180px_minmax(0,1fr)] md:gap-12">
+              <article className="grid gap-8 border-t border-line pt-10 md:grid-cols-[180px_minmax(0,1fr)] md:gap-12 lg:grid-cols-[180px_minmax(0,1fr)_300px]">
                 {/* Meta rail */}
                 <div className="flex flex-col gap-1.5">
                   <span className="font-mono text-[12px] text-text">{job.period}</span>
                   <span className="text-[13px] text-text-faint">{job.location}</span>
                 </div>
 
-                <div>
+                <div className="lg:order-1">
                   <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                     <h3 className="text-[21px] font-medium tracking-tight text-white md:text-[24px]">
                       {job.role}
@@ -86,6 +87,11 @@ export default function Experience() {
                       </li>
                     ))}
                   </ul>
+                </div>
+
+                {/* System architecture: signals in, agent in the middle, structured output out */}
+                <div className="md:col-start-2 lg:col-start-3 lg:row-start-1">
+                  <AgentPipeline />
                 </div>
               </article>
             </Reveal>

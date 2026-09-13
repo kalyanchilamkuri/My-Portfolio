@@ -1,84 +1,103 @@
-import { ArrowDown, ArrowUpRight, Mail } from "lucide-react";
-import { profile, links } from "@/lib/content";
-import { GitHubIcon, LinkedInIcon, LeetCodeIcon } from "@/components/ui/Icons";
-import AgentPipeline from "@/components/AgentPipeline";
+"use client";
+
+import dynamic from "next/dynamic";
+import { useEffect, useRef, useState } from "react";
+import { ChevronDown, FileText } from "lucide-react";
+import { profile, links, heroTags } from "@/lib/content";
+import { GitHubIcon, LinkedInIcon } from "@/components/ui/Icons";
+import HeroFallback from "@/components/hero/HeroFallback";
+
+const CoreNetworkCanvas = dynamic(() => import("@/components/hero/CoreNetworkCanvas"), {
+  ssr: false,
+  loading: () => <HeroFallback />,
+});
 
 const SOCIALS = [
   { label: "GitHub", href: links.github, Icon: GitHubIcon },
   { label: "LinkedIn", href: links.linkedin, Icon: LinkedInIcon },
-  { label: "LeetCode", href: links.leetcode, Icon: LeetCodeIcon },
 ];
 
-/** Staggered entrance without client JS — the resting state is already visible. */
-const delay = (ms: number) => ({ animationDelay: `${ms}ms` });
-
 export default function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const scrollRef = useRef(0);
+  const [fade, setFade] = useState(0);
+
+  useEffect(() => {
+    let raf = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const el = sectionRef.current;
+        if (!el) return;
+        const t = Math.min(1, Math.max(0, window.scrollY / (el.offsetHeight * 0.85)));
+        scrollRef.current = t;
+        setFade((prev) => (Math.abs(prev - t) > 0.01 ? t : prev));
+      });
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
+
+  const handleEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section
+      ref={sectionRef}
       id="top"
-      className="relative flex min-h-[calc(100svh-40px)] items-center overflow-hidden pb-20 pt-28 md:pb-28 md:pt-32"
+      className="relative h-[100svh] min-h-[560px] w-full overflow-hidden bg-bg"
     >
-      {/* Ambient depth — large, dim, slow. */}
       <div
         aria-hidden="true"
-        className="hero-glow pointer-events-none absolute -top-40 left-1/2 -z-10 h-[620px] w-[900px] -translate-x-1/2 rounded-full opacity-60 blur-[120px] motion-reduce:animate-none"
+        className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(closest-side, rgba(110,107,255,0.16), transparent 70%)",
+            "radial-gradient(closest-side, rgba(122,119,255,0.14), transparent 70%)",
         }}
       />
 
-      <div className="shell grid w-full items-center gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-16">
-        <div className="flex flex-col items-start">
-          <span className="rise chip border-line-strong text-text-muted" style={delay(0)}>
-            <span className="live-dot size-1.5 rounded-full bg-signal" aria-hidden="true" />
-            Open to software engineering roles
-          </span>
+      <div
+        className="absolute inset-x-0 top-14 bottom-[44%] sm:bottom-[40%] md:top-20 md:bottom-[36%]"
+        style={{
+          opacity: 1 - fade * 0.7,
+          transform: `scale(${1 + fade * 0.04}) translateY(${fade * -18}px)`,
+        }}
+      >
+        <CoreNetworkCanvas scrollRef={scrollRef} />
+      </div>
 
-          <h1
-            className="rise mt-7 text-[clamp(2.125rem,1.5rem+2.6vw,3.75rem)] font-semibold leading-[1.04] tracking-[-0.04em] text-white"
-            style={delay(60)}
-          >
+      <div
+        className="shell relative z-10 flex h-full flex-col justify-end pb-14 pt-[calc(var(--nav-h)+24px)] md:pb-20"
+        style={{ opacity: 1 - fade * 1.1 }}
+      >
+        <div className="rise" style={{ animationDelay: "80ms" }}>
+          <h1 className="text-[clamp(2.5rem,1.6rem+4.2vw,5.5rem)] font-semibold leading-[0.98] tracking-[-0.045em] text-white">
             {profile.name}
           </h1>
-
-          <p
-            className="rise mt-5 max-w-xl text-[clamp(1.0625rem,1rem+0.5vw,1.375rem)] leading-[1.45] tracking-[-0.015em] text-text"
-            style={delay(120)}
-          >
-            {profile.positioning}
+          <p className="mt-3 font-mono text-[13px] uppercase tracking-[0.22em] text-text-muted md:text-[14px]">
+            {profile.role}
           </p>
-
-          <p
-            className="rise mt-5 max-w-xl text-[15px] leading-[1.7] text-text-muted"
-            style={delay(180)}
-          >
-            Computer Science undergraduate at IIIT Lucknow, graduating May 2027. At{" "}
-            <span className="text-text">Sprinklr</span> I build AI agents, LLM
-            integrations and backend microservices — including an on-call agent that
-            processes 500+ daily alerts and cut mean-time-to-triage by 40%.
+          <p className="mt-2 font-mono text-[11.5px] uppercase tracking-[0.18em] text-text-faint md:text-[12px]">
+            {heroTags.join("  ×  ")}
           </p>
+        </div>
 
-          <div className="rise mt-9 flex flex-wrap items-center gap-3" style={delay(240)}>
-            <a href="#projects" className="btn-primary">
-              View projects
-              <ArrowDown size={14} aria-hidden="true" />
-            </a>
-            <a
-              href={links.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
-            >
-              Resume
-              <ArrowUpRight size={14} aria-hidden="true" />
-            </a>
-          </div>
+        <div
+          className="rise mt-8 flex flex-wrap items-center gap-x-8 gap-y-5"
+          style={{ animationDelay: "160ms" }}
+        >
+          <a href="#about" onClick={handleEnter} className="btn-primary">
+            Enter portfolio
+            <ChevronDown size={14} aria-hidden="true" />
+          </a>
 
-          <div
-            className="rise mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-line pt-7"
-            style={delay(300)}
-          >
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
             {SOCIALS.map(({ label, href, Icon }) => (
               <a
                 key={label}
@@ -92,18 +111,24 @@ export default function Hero() {
               </a>
             ))}
             <a
-              href={links.email}
+              href={links.resume}
+              target="_blank"
+              rel="noopener noreferrer"
               className="link-underline font-mono text-[12px] tracking-wide"
             >
-              <Mail size={14} aria-hidden="true" />
-              Email
+              <FileText size={14} aria-hidden="true" />
+              Resume
             </a>
           </div>
         </div>
+      </div>
 
-        <div className="rise w-full" style={delay(200)}>
-          <AgentPipeline />
-        </div>
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-6 z-10 flex justify-center"
+        style={{ opacity: 1 - fade * 3 }}
+      >
+        <ChevronDown size={16} className="animate-bounce text-text-faint" />
       </div>
     </section>
   );

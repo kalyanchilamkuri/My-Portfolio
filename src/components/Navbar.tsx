@@ -179,7 +179,7 @@ export default function Navbar() {
                       className="flex items-baseline gap-4 py-5 text-[22px] font-medium tracking-tight text-text"
                     >
                       <span className="font-mono text-[11px] text-text-faint">
-                        {String(navSections.indexOf(section) + 1).padStart(2, "0")}
+                        {section.index}
                       </span>
                       {section.label}
                     </a>

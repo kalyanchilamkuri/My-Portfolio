@@ -16,7 +16,7 @@ export default function Contact() {
     <section id="contact" className="section">
       <div className="shell">
         <SectionHeader
-          index="06"
+          index="07"
           eyebrow="Contact"
           title="Let's build something worth shipping."
           lede="I'm open to software engineering roles and collaborations — particularly anything involving agentic systems, backend infrastructure, or hard algorithmic problems."

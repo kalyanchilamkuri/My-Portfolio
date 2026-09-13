@@ -7,7 +7,7 @@ export default function Education() {
     <section id="education" className="section">
       <div className="shell">
         <SectionHeader
-          index="05"
+          index="06"
           eyebrow="Education & recognition"
           title="Background."
         />

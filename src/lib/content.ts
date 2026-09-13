@@ -18,6 +18,8 @@ export const profile = {
     "Computer Science undergraduate at IIIT Lucknow, graduating May 2027. At Sprinklr I build AI agents, LLM integrations and backend microservices — including agentic workflows that process 500+ daily alerts and cut mean-time-to-triage by 40%.",
 } as const;
 
+export const heroTags = ["AI", "BACKEND", "FULL STACK", "PROBLEM SOLVING"] as const;
+
 export const links = {
   github: "https://github.com/kalyanchilamkuri",
   linkedin: "https://www.linkedin.com/in/kalyan-chilamkuri-72a521304/",
@@ -242,10 +244,10 @@ export const leadership = [
 /* ── Navigation ──────────────────────────────────────────── */
 
 export const navSections = [
-  { id: "about", label: "About" },
-  { id: "experience", label: "Experience" },
-  { id: "projects", label: "Projects" },
-  { id: "skills", label: "Skills" },
-  { id: "education", label: "Education" },
-  { id: "contact", label: "Contact" },
+  { id: "about", label: "About", index: "01" },
+  { id: "experience", label: "Experience", index: "02" },
+  { id: "projects", label: "Projects", index: "03" },
+  { id: "skills", label: "Skills", index: "05" },
+  { id: "education", label: "Education", index: "06" },
+  { id: "contact", label: "Contact", index: "07" },
 ] as const;

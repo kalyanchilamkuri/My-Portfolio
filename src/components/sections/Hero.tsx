@@ -1,16 +1,10 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, FileText } from "lucide-react";
 import { profile, links, heroTags } from "@/lib/content";
 import { GitHubIcon, LinkedInIcon } from "@/components/ui/Icons";
-import HeroFallback from "@/components/hero/HeroFallback";
-
-const CoreNetworkCanvas = dynamic(() => import("@/components/hero/CoreNetworkCanvas"), {
-  ssr: false,
-  loading: () => <HeroFallback />,
-});
+import { ParticleHero } from "@/components/ui/animated-hero";
 
 const SOCIALS = [
   { label: "GitHub", href: links.github, Icon: GitHubIcon },
@@ -19,7 +13,6 @@ const SOCIALS = [
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
-  const scrollRef = useRef(0);
   const [fade, setFade] = useState(0);
 
   useEffect(() => {
@@ -30,7 +23,6 @@ export default function Hero() {
         const el = sectionRef.current;
         if (!el) return;
         const t = Math.min(1, Math.max(0, window.scrollY / (el.offsetHeight * 0.85)));
-        scrollRef.current = t;
         setFade((prev) => (Math.abs(prev - t) > 0.01 ? t : prev));
       });
     };
@@ -48,32 +40,14 @@ export default function Hero() {
   };
 
   return (
-    <section
+    <ParticleHero
       ref={sectionRef}
       id="top"
-      className="relative h-[100svh] min-h-[560px] w-full overflow-hidden bg-bg"
+      className="h-[100svh] min-h-[560px]"
+      particleCount={13}
     >
       <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10"
-        style={{
-          background:
-            "radial-gradient(closest-side, rgba(122,119,255,0.14), transparent 70%)",
-        }}
-      />
-
-      <div
-        className="absolute inset-x-0 top-14 bottom-[44%] sm:bottom-[40%] md:top-20 md:bottom-[36%]"
-        style={{
-          opacity: 1 - fade * 0.7,
-          transform: `scale(${1 + fade * 0.04}) translateY(${fade * -18}px)`,
-        }}
-      >
-        <CoreNetworkCanvas scrollRef={scrollRef} />
-      </div>
-
-      <div
-        className="shell relative z-10 flex h-full flex-col justify-end pb-14 pt-[calc(var(--nav-h)+24px)] md:pb-20"
+        className="shell absolute inset-0 z-10 flex flex-col justify-end pb-14 pt-[calc(var(--nav-h)+24px)] md:pb-20"
         style={{ opacity: 1 - fade * 1.1 }}
       >
         <div className="rise" style={{ animationDelay: "80ms" }}>
@@ -130,6 +104,6 @@ export default function Hero() {
       >
         <ChevronDown size={16} className="animate-bounce text-text-faint" />
       </div>
-    </section>
+    </ParticleHero>
   );
 }

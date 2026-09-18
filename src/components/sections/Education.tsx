@@ -1,10 +1,12 @@
 import SectionHeader from "@/components/ui/SectionHeader";
 import Reveal from "@/components/ui/Reveal";
+import SectionBackdrop from "@/components/ui/SectionBackdrop";
 import { education, achievements, leadership } from "@/lib/content";
 
 export default function Education() {
   return (
     <section id="education" className="section">
+      <SectionBackdrop delay={8} />
       <div className="shell">
         <SectionHeader
           index="06"

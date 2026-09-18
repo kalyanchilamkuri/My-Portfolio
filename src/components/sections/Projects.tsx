@@ -5,6 +5,7 @@ import { GitHubIcon } from "@/components/ui/Icons";
 import { projects, type Project } from "@/lib/content";
 import ExtraProjects from "@/components/ExtraProjects";
 import SpotlightCard from "@/components/ui/SpotlightCard";
+import SectionBackdrop from "@/components/ui/SectionBackdrop";
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
@@ -140,6 +141,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 export default function Projects() {
   return (
     <section id="projects" className="section">
+      <SectionBackdrop delay={4} />
       <div className="shell">
         <SectionHeader
           index="03"

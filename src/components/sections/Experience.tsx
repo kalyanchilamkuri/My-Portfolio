@@ -3,12 +3,14 @@ import SectionHeader from "@/components/ui/SectionHeader";
 import Reveal from "@/components/ui/Reveal";
 import CountUp from "@/components/ui/CountUp";
 import SpotlightCard from "@/components/ui/SpotlightCard";
+import SectionBackdrop from "@/components/ui/SectionBackdrop";
 import AgentPipeline from "@/components/AgentPipeline";
 import { experience } from "@/lib/content";
 
 export default function Experience() {
   return (
     <section id="experience" className="section">
+      <SectionBackdrop delay={2} />
       <div className="shell">
         <SectionHeader
           index="02"

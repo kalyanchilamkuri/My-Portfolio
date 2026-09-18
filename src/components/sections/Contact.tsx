@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Reveal from "@/components/ui/Reveal";
+import SectionBackdrop from "@/components/ui/SectionBackdrop";
 import ContactForm from "@/components/ContactForm";
 import { GitHubIcon, LinkedInIcon } from "@/components/ui/Icons";
 import { profile, links } from "@/lib/content";
@@ -14,6 +15,7 @@ const CHANNELS = [
 export default function Contact() {
   return (
     <section id="contact" className="section">
+      <SectionBackdrop delay={1} />
       <div className="shell">
         <SectionHeader
           index="07"

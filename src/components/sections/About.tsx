@@ -1,5 +1,6 @@
 import SectionHeader from "@/components/ui/SectionHeader";
 import Reveal from "@/components/ui/Reveal";
+import SectionBackdrop from "@/components/ui/SectionBackdrop";
 import { strengths, interests, education, problemsSolved } from "@/lib/content";
 
 const FACTS = [
@@ -11,6 +12,7 @@ const FACTS = [
 export default function About() {
   return (
     <section id="about" className="section">
+      <SectionBackdrop delay={0} />
       <div className="shell">
         <SectionHeader
           index="01"

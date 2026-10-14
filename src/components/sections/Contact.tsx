@@ -8,6 +8,7 @@ import { profile, links } from "@/lib/content";
 
 const CHANNELS = [
   { label: "Email", value: profile.email, href: links.email, Icon: null },
+  { label: "Phone", value: profile.phone, href: links.phone, Icon: null },
   { label: "LinkedIn", value: "in/kalyan-chilamkuri", href: links.linkedin, Icon: LinkedInIcon },
   { label: "GitHub", value: "@kalyanchilamkuri", href: links.github, Icon: GitHubIcon },
 ];

@@ -1,21 +1,22 @@
 /**
  * Single source of truth for portfolio content.
- * Every value here is taken from public/Kalyan_Chilamkuri_Resume.pdf.
+ * Every value here is taken from public/Jaswanth_kalyan_Resume.pdf.
  * Nothing may be added that is not backed by that document.
  */
 
 export const SITE_URL = "https://kalyanchilamkuri.dev";
 
 export const profile = {
-  name: "Kalyan Chilamkuri",
+  name: "Jaswanth Kalyan",
   role: "Software Engineer",
-  email: "kalyanchilamkuri1670808@gmail.com",
+  email: "real.kalyan167@gmail.com",
+  phone: "+91 6281750241",
   location: "India",
   university: "IIIT Lucknow",
   positioning:
     "I build agentic AI systems and the backend infrastructure they run on.",
   summary:
-    "Computer Science undergraduate at IIIT Lucknow, graduating May 2027. At Sprinklr I build AI agents, LLM integrations and backend microservices — including agentic workflows that process 500+ daily alerts and cut mean-time-to-triage by 40%.",
+    "Computer Science undergraduate at IIIT Lucknow (CGPA: 8.80), graduating May 2027, with software engineering experience at Sprinklr building and deploying backend services, microservices, REST APIs, and production systems. Experienced in C++, Java, Python, JavaScript, Spring Boot, Node.js, Docker, CI/CD, authentication, and system reliability. Built production systems processing 500+ daily alerts, reducing mean-time-to-triage by 40% and saving 10+ hrs/week of manual debugging. Strong problem-solving background with 1000+ DSA problems solved.",
 } as const;
 
 export const heroTags = ["AI", "BACKEND", "FULL STACK", "PROBLEM SOLVING"] as const;
@@ -24,10 +25,11 @@ export const links = {
   github: "https://github.com/kalyanchilamkuri",
   linkedin: "https://www.linkedin.com/in/kalyan-chilamkuri-72a521304/",
   leetcode: "https://leetcode.com/u/Jaswanth__167/",
-  codeforces: "https://codeforces.com/profile/anonymous2025",
+  codeforces: "https://codeforces.com/profile/bytewolf",
   codechef: "https://www.codechef.com/users/jaswanth__167",
-  email: "mailto:kalyanchilamkuri1670808@gmail.com",
-  resume: "/Kalyan_Chilamkuri_Resume.pdf",
+  email: "mailto:real.kalyan167@gmail.com",
+  phone: "tel:+916281750241",
+  resume: "/Jaswanth_kalyan_Resume.pdf",
 } as const;
 
 /* ── About ───────────────────────────────────────────────── */
@@ -60,9 +62,9 @@ export const experience = [
   {
     company: "Sprinklr",
     companyUrl: "https://www.sprinklr.com",
-    role: "Software Engineering Intern",
+    role: "Product Engineering Intern",
     team: "Agentic AI & Platform Reliability",
-    period: "Mar 2026 — Aug 2026",
+    period: "March 2026 – September 2026",
     location: "Gurugram, Haryana",
     metrics: [
       { value: 40, suffix: "%", label: "Lower time-to-triage" },
@@ -70,11 +72,11 @@ export const experience = [
       { value: 500, suffix: "+", label: "Daily alerts processed" },
     ],
     bullets: [
-      "Built and deployed an AI-powered on-call agent integrating PagerDuty, Grafana, Kibana and Graylog to process 500+ daily alerts, reducing mean-time-to-triage by 40% and saving 10+ hrs/week of manual debugging.",
-      "Engineered end-to-end agentic workflows for alert ingestion, investigation, tool execution and structured Root Cause Analysis generation, improving observability and operational reliability across internal microservices.",
+      "Built and deployed an AI-powered on-call agent integrating PagerDuty, Grafana, Kibana, and Graylog to process 500+ daily alerts, reducing mean-time-to-triage by 40% and saving 10+ hrs/week of manual debugging.",
+      "Engineered end-to-end backend workflows for alert ingestion, investigation, tool execution, and structured Root Cause Analysis (RCA) generation, improving observability and operational reliability across internal microservices.",
       "Designed and deployed Model Context Protocol (MCP) servers in Python to connect LLM-driven agents with internal APIs, enabling low-latency tool execution and automated operational workflows.",
     ],
-    stack: ["Python", "MCP", "LLMs", "PagerDuty", "Grafana", "Kibana", "Graylog"],
+    stack: ["Python", "MCP", "FastAPI", "LLMs", "PagerDuty", "Grafana", "Kibana", "Graylog"],
   },
 ] as const;
 
@@ -101,13 +103,13 @@ export const projects: readonly Project[] = [
     problem:
       "Deciding where a business or public facility should exist usually means slow, manual market research — and it rarely captures what a neighbourhood actually asks for.",
     build:
-      "A platform where people pin and upvote the local infrastructure they need, built end-to-end in a 24-hour hackathon. Runner-up out of 100+ teams at Hack-O-Fiesta 2025.",
+      "A community-driven infrastructure mapping platform that enables users to pin and upvote local infrastructure needs, earning Runner-up out of 100+ teams at Hack-O-Fiesta 2025 during a 24-hour hackathon.",
     engineering: [
-      "Backend services, database workflows and API integrations in Node.js, Express.js and MongoDB, keeping data flow reliable between frontend and backend.",
-      "Google Gemini API analyses local market competition to generate data-driven profitability insights.",
-      "Google Maps API drives location-based demand mapping across pinned requests.",
+      "Built a community-driven infrastructure mapping platform that enables users to pin and upvote local infrastructure needs.",
+      "Integrated the Google Gemini API to analyze local market competition and generate data-driven profitability insights.",
+      "Integrated the Google Maps API for location-based demand mapping across pinned infrastructure needs.",
     ],
-    stack: ["Next.js", "Node.js", "Express.js", "MongoDB", "Gemini API", "Maps API"],
+    stack: ["Next.js", "Node.js", "Express.js", "MongoDB", "Google Gemini API", "Google Maps API"],
     repo: "https://github.com/TanishqAswar/CrowdInfra",
     demo: "https://infra-crowd.vercel.app/landing",
     note: "Hack-O-Fiesta 2025 — Runner-up",
@@ -119,12 +121,12 @@ export const projects: readonly Project[] = [
     problem:
       "Travel planning spans destinations, hotels, flights and activities across disconnected sources, each with its own access model and data shape.",
     build:
-      "A full-stack application that brings all four into a single authenticated platform users can search from one place.",
+      "Designed and built a full-stack travel planning application using React.js, Spring Boot, and MySQL, enabling users to search destinations, hotels, flights, and activities through a unified platform.",
     engineering: [
-      "React.js front end over a Spring Boot and MySQL backend serving unified search.",
-      "JWT-based authentication with role-based access control securing user access and application resources.",
+      "Designed and built a full-stack travel planning application using React.js, Spring Boot, and MySQL for unified search across destinations, hotels, flights, and activities.",
+      "Implemented JWT-based authentication and role-based access control (RBAC) to secure user access and application resources.",
     ],
-    stack: ["React.js", "Spring Boot", "MySQL", "REST APIs", "JWT"],
+    stack: ["React.js", "Spring Boot", "MySQL", "REST APIs", "JWT Authentication"],
     repo: "https://github.com/kalyanchilamkuri/TravelPedia2",
   },
 ];
@@ -161,20 +163,28 @@ export const problemsSolved = "1000+";
 
 export const skillGroups = [
   {
-    group: "Languages",
-    items: ["C++", "Python", "JavaScript", "Java", "C", "SQL"],
+    group: "Programming Languages",
+    items: ["C++", "Java", "Python", "JavaScript", "C", "SQL"],
+  },
+  {
+    group: "Core CS & Software Engineering",
+    items: [
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming",
+      "Operating Systems",
+      "DBMS",
+      "Computer Networks",
+      "Debugging",
+    ],
   },
   {
     group: "AI & Agentic Systems",
     items: [
       "LLM Integration",
-      "Agentic AI",
-      "LLM Tool Orchestration",
-      "MCP",
-      "RAG",
-      "Prompt Engineering",
-      "FastAPI",
+      "MCP (Model Context Protocol)",
       "Tool Calling",
+      "FastAPI",
+      "AI Agents",
     ],
   },
   {
@@ -190,12 +200,21 @@ export const skillGroups = [
     ],
   },
   {
-    group: "Frontend",
-    items: ["React.js", "Next.js", "Tailwind CSS", "HTML/CSS"],
+    group: "DevOps & Observability",
+    items: [
+      "Docker",
+      "Git",
+      "GitHub",
+      "CI/CD",
+      "Grafana",
+      "Kibana",
+      "Graylog",
+      "PagerDuty",
+    ],
   },
   {
-    group: "DevOps & Observability",
-    items: ["Docker", "Git", "GitHub", "CI/CD", "Grafana", "Kibana", "Graylog", "PagerDuty"],
+    group: "Frontend Technologies",
+    items: ["React.js", "Next.js", "Tailwind CSS", "HTML/CSS"],
   },
 ] as const;
 
@@ -205,7 +224,7 @@ export const education = {
   institution: "Indian Institute of Information Technology, Lucknow",
   shortName: "IIIT Lucknow",
   degree: "B.Tech, Computer Science & Engineering",
-  period: "Jul 2023 — May 2027",
+  period: "Jul 2023 — Present",
   location: "Lucknow, Uttar Pradesh",
   cgpa: "8.80",
   coursework: [
@@ -224,12 +243,12 @@ export const achievements = [
   {
     title: "Runner-up, Hack-O-Fiesta 2025",
     org: "IIIT Lucknow",
-    body: "Placed among 100+ competing teams by building CrowdInfra within a strict 24-hour hackathon.",
+    body: "Secured runner-up position among 100+ teams at IIIT Lucknow during a 24-hour hackathon by building CrowdInfra.",
   },
   {
-    title: `${problemsSolved} problems solved`,
-    org: "Codeforces · LeetCode · CodeChef",
-    body: "Expert on Codeforces (max 1722), Knight on LeetCode (1978), 4-Star on CodeChef (1888).",
+    title: `${problemsSolved} DSA problems solved`,
+    org: "Competitive Programming",
+    body: "Solved over 1000 DSA problems across competitive programming platforms: Codeforces Expert (max 1722), LeetCode Knight (1978), CodeChef 4-Star (1888).",
   },
 ] as const;
 
@@ -237,7 +256,7 @@ export const leadership = [
   {
     role: "Coordinator",
     org: "Utkrisht Fine Arts Society",
-    body: "Managed end-to-end logistics, vendor relations and on-site operations for cultural exhibitions attended by 500+ participants.",
+    body: "Managed end-to-end logistics, vendor relations, and on-site operations for cultural exhibitions attended by 500+ participants.",
   },
 ] as const;
 

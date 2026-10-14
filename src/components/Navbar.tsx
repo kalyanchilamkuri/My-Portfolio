@@ -79,11 +79,11 @@ export default function Navbar() {
             className="group flex items-center gap-2.5"
             aria-label={`${profile.name} — back to top`}
           >
-            <span className="grid size-7 place-items-center rounded-md border border-line-strong bg-surface-2 font-mono text-[13px] font-medium text-text transition-colors group-hover:border-accent">
-              K
+            <span className="grid size-7 place-items-center rounded-md border border-line-strong bg-surface-2 font-mono text-[12px] font-medium text-text transition-colors group-hover:border-accent">
+              JK
             </span>
             <span className="hidden text-[14px] font-medium tracking-tight text-text sm:block">
-              Kalyan Chilamkuri
+              {profile.name}
             </span>
           </a>
 

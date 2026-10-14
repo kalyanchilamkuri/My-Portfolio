@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import VaultClient from "@/components/vault/VaultClient";
 
 export const metadata = {
-  title: "Vault — Command Center | Kalyan",
+  title: "Vault — Command Center | Jaswanth Kalyan",
   description: "Private admin dashboard",
 };
 

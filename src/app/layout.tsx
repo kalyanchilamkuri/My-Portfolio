@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 const description =
-  "Kalyan Chilamkuri — Computer Science undergraduate at IIIT Lucknow (graduating 2027) building agentic AI systems, LLM integrations and backend microservices. Software Engineering Intern at Sprinklr, 1000+ competitive programming problems solved.";
+  "Jaswanth Kalyan — Computer Science undergraduate at IIIT Lucknow (graduating 2027) building agentic AI systems, LLM integrations and backend microservices. Product Engineering Intern at Sprinklr, 1000+ competitive programming problems solved.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -26,8 +26,10 @@ export const metadata: Metadata = {
   },
   description,
   keywords: [
+    "Jaswanth Kalyan",
     "Kalyan Chilamkuri",
     "Software Engineer",
+    "Product Engineering Intern",
     "Agentic AI",
     "Model Context Protocol",
     "Competitive Programming",

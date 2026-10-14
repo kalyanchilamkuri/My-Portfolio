@@ -13,7 +13,7 @@ interface Doc {
 }
 
 const DEFAULT_DOCS: Doc[] = [
-  { id: "1", name: "Kalyan_Chilamkuri_Resume.pdf", type: "pdf",  size: "118 KB", url: "/Kalyan_Chilamkuri_Resume.pdf" },
+  { id: "1", name: "Jaswanth_kalyan_Resume.pdf", type: "pdf",  size: "152 KB", url: "/Jaswanth_kalyan_Resume.pdf" },
   { id: "2", name: "ICPC Regionalist Certificate.pdf", type: "pdf",  size: "245 KB"  },
   { id: "3", name: "Project Screenshots",       type: "folder" },
   { id: "4", name: "CollabCode Presentation.pptx", type: "pptx", size: "2.4 MB" },

@@ -9,14 +9,14 @@ export const SITE_URL = "https://kalyanchilamkuri.dev";
 export const profile = {
   name: "Jaswanth Kalyan",
   role: "Software Engineer",
-  email: "real.kalyan167@gmail.com",
-  phone: "+91 6281750241",
+  email: "chikaa1670808@gmail.com",
+  phone: "+91 8688352398",
   location: "India",
   university: "IIIT Lucknow",
   positioning:
     "I build agentic AI systems and the backend infrastructure they run on.",
   summary:
-    "Computer Science undergraduate at IIIT Lucknow (CGPA: 8.80), graduating May 2027, with software engineering experience at Sprinklr building and deploying backend services, microservices, REST APIs, and production systems. Experienced in C++, Java, Python, JavaScript, Spring Boot, Node.js, Docker, CI/CD, authentication, and system reliability. Built production systems processing 500+ daily alerts, reducing mean-time-to-triage by 40% and saving 10+ hrs/week of manual debugging. Strong problem-solving background with 1000+ DSA problems solved.",
+    "Computer Science undergraduate at IIIT Lucknow (CGPA: 8.80), graduating May 2027, with software engineering experience at Sprinklr building backend services, microservices, REST APIs, and AI-native workflows. Strong fundamentals in C++, Java, Python, JavaScript, Data Structures & Algorithms, Object-Oriented Programming, databases, and distributed systems. Experienced with LLM integration, MCP, tool calling, Docker, and CI/CD; solved 1000+ algorithmic problems.",
 } as const;
 
 export const heroTags = ["AI", "BACKEND", "FULL STACK", "PROBLEM SOLVING"] as const;
@@ -27,8 +27,8 @@ export const links = {
   leetcode: "https://leetcode.com/u/Jaswanth__167/",
   codeforces: "https://codeforces.com/profile/bytewolf",
   codechef: "https://www.codechef.com/users/jaswanth__167",
-  email: "mailto:real.kalyan167@gmail.com",
-  phone: "tel:+916281750241",
+  email: "mailto:chikaa1670808@gmail.com",
+  phone: "tel:+918688352398",
   resume: "/Jaswanth_kalyan_Resume.pdf",
 } as const;
 
@@ -62,7 +62,7 @@ export const experience = [
   {
     company: "Sprinklr",
     companyUrl: "https://www.sprinklr.com",
-    role: "Product Engineering Intern",
+    role: "Software Engineering Intern",
     team: "Agentic AI & Platform Reliability",
     period: "March 2026 – September 2026",
     location: "Gurugram, Haryana",
@@ -198,6 +198,10 @@ export const skillGroups = [
       "MongoDB",
       "MySQL",
     ],
+  },
+  {
+    group: "Data Science & Machine Learning",
+    items: ["Scikit-learn", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
   },
   {
     group: "DevOps & Observability",
